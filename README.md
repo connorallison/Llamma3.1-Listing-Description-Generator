@@ -1,7 +1,7 @@
 # Llamma3.1-Listing-Description-Generator
 
 
-#### Data files 
+### Data files 
 housing_data_simulation1.csv is the original training data and the one that ended up yielding the best results. 
 This was the file that was used to train the model that then generated the listing descriptions that we rated and compared to the training data. 
 
@@ -10,7 +10,7 @@ housing_data_simulation2.csv contains 40 additional listing description templete
 housing_data_simulation test copy.csv contains the first fifty observations from housing_data_simulation1.csv without the listing descriptions column
 This data was used as the test copy. 
 
-#### Models 
+### Models 
 *Llama_RealEstate_LLM* is the first successful model we created. It will train the base Llama model using the training data and then generate listing descriptions for the test set. 
 It will take about 50min to train and 15 to generate a batch of 50 listing descritions. 
 
@@ -24,5 +24,5 @@ It will take about 50min to train and 15 to generate a batch of 50 listing descr
 You will need a hugging face token and permission from Meta to use Llama3.1-8b. You will need to set up this token as a google secret
 
 
-#### Evaluations
+### Evaluations
 Both Listing Eval files and StaticEvalMetrics contain simple python code that takes the ratings for both sets of listing descriptions and compares them using a 2-sample t-test
